@@ -35,15 +35,14 @@ const HeroSection = styled.section`
 `;
 
 const HeroContent = styled.div`
+  max-width: 690px;
   position: relative;
   z-index: 1;
   padding: 140px 2% 0; 
-  max-width: 690px;
   animation: ${fadeIn} 1.1s ease-out;
 
-  h1 { font-size: 3.5rem;
-    font-weight: 850;
- font-family: "Outfit", sans-serif;    // font-family:  serif;
+  h1 { font-size: 3rem;
+    font-weight: 800;
     display: flex;
     flex-wrap: wrap;     
     transform: skew(-6deg); 
@@ -200,7 +199,7 @@ const ComprehensiveSolutions = () =>{
 <Wrapper>
     <HeroSection>
       <HeroContent>
-        <h1>Guidewire Solutions</h1>
+        <h1>Core P&C Solutions</h1>
         <p>Seamless, optimized implementation for modern insurers.</p>
         {/* <HeroButton>Learn More</HeroButton> */}
       </HeroContent>
@@ -251,7 +250,20 @@ const ComprehensiveSolutions = () =>{
     <CTA>
       <h2>Ready to Transform Your Data Strategy?</h2>
       <p>Discover how our frameworks modernize operations and unlock measurable business value.</p>
-      <button onClick={() => {window.scrollTo(0, 0); navigate("/contactUs");}} >Contact Us</button>
+      {/* <button onClick={() => {navigate("/contactUs");
+        setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 0);
+      }} >Contact Us</button> */}
+
+      <button
+  onClick={() => {
+    navigate("/contactUs", { state: { scrollTop: true } });
+  }}
+>
+  Contact Us
+</button>
+
     </CTA>
   </Wrapper>
 )};

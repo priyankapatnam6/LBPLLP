@@ -14,7 +14,7 @@ const Wrapper = styled.div`
   background: #fff;
   overflow-x: hidden;
   margin-top: -130px;
-  font-family: "Inter", sans-serif;
+  // font-family: "Inter", sans-serif;
 `;
 
 const HeroSection = styled.section`
@@ -27,18 +27,19 @@ const HeroSection = styled.section`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding-left: 8%;
 `;
 
 const HeroContent = styled.div`
-  max-width: 650px;
-  z-index: 2;
+  max-width: 690px;
+  position: relative;
+  z-index: 1;
+  padding: 140px 2% 0; 
   animation: ${fadeIn} 1.1s ease-out;
 
   h1 {
-    font-size: 3.8rem;
+    font-size: 3rem;
     font-weight: 800;
-    font-family: "Outfit", sans-serif;
+
     background: linear-gradient(90deg, #93c5fd, #ffffff);
     -webkit-background-clip: text;
     color: transparent;

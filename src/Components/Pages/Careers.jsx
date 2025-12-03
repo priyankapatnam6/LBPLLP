@@ -10,20 +10,16 @@ import { FaTimes } from "react-icons/fa";
 
 const Wrapper = styled.div`
   width: 100%;
-  // font-family: "Inter", sans-serif;
   color: #333;
   margin-top: -140px; 
-  background-color: #f9fafc;
-`;
+  background-color: #f9fafc;`;
 
 const Hero = styled.section`
   position: relative;
   color:white;
-
-  // color: #1b1a1a;
   padding: 120px 20px;
   text-align: center;
-   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),  url(${career}) center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),  url(${career}) center/cover no-repeat;
   // background: url(${career}) center/cover no-repeat;
   border: 2px solid transparent;
   border-radius: 16px;
@@ -42,26 +38,14 @@ const Hero = styled.section`
   }
 
   @keyframes gradientMove {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}}
 
-  > * {
-    position: relative;
-    z-index: 1;
-  }
-`;
+  > * { position: relative;z-index: 1;}`;
 
 const HeroTitle = styled.h1`
   font-size: 2rem;
-  // margin-bottom: 20px;
   font-weight: 800;
 `;
 
@@ -179,10 +163,7 @@ const TableData = styled.td`
   font-size: 0.95rem;
   color: #444;
   vertical-align: middle;
-  text-align: center; /* center align content */
-
-  /* Remove block display on mobile, keep table layout */
-`;
+  text-align: center; `;
 
 const ApplyButton = styled.button`
   background-color: #2e3a59;
@@ -290,9 +271,7 @@ const CTAText = styled.p`
 
 const CTAButton = styled.a`
   background-color:#2e3a59;
-  // background-color:white
   color: #fff;
-  // color:black;
   padding: 14px 28px;
   border-radius: 10px;
   font-size: 1rem;

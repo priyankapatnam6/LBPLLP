@@ -21,7 +21,6 @@ const HeroSection = styled.section`
   width: 100%;
   height: 50vh;
  background: url(${heroImage}) center center / contain no-repeat, #0f172a; 
-  // background: url(${heroImage}) center/cover no-repeat;
   color: #fff;
   display: flex;
   align-items: flex-end;
@@ -38,12 +37,12 @@ const HeroSection = styled.section`
 const HeroContent = styled.div`
   position: relative;
   z-index: 1;
-  padding: 60px 5%;
+  padding: 140px 2% 0; 
   max-width: 600px; 
   animation: ${fadeIn} 1s ease-out;
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 800;
     background: linear-gradient(90deg, #93c5fd, #ffffff);
     -webkit-background-clip: text;

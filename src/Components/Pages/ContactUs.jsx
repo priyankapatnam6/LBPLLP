@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { FaUpload, FaTimes } from "react-icons/fa";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const Wrapper = styled.div`
   display: flex;
@@ -143,6 +145,7 @@ const FilePreview = styled.div`
 `;
 
 const ContactUs = () => {
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -154,6 +157,12 @@ const ContactUs = () => {
     opportunity: "",
     file: null,
   });
+  
+useEffect(() => {
+  window.scrollTo(0, -100);
+}, []);
+
+
 
   const handleChange = (e) => {
     const { name, value, files } = e.target;
