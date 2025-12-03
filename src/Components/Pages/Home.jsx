@@ -163,7 +163,7 @@ const Home = () => {
 <h6 style={{fontFamily:'Microgramma, sans-serif'}}>Welcome to LeftBrain Path LLP</h6>
 <h6 style={{fontFamily:'Eurostile, sans-serif'}}>Welcome to LeftBrain Path LLP</h6>
 <h6 style={{fontFamily:'Orbitron, sans-serif'}}>Welcome to LeftBrain Path LLP</h6>  </div>   */}
-
+{/* 
 <div>
   <link
         href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap"
@@ -184,7 +184,7 @@ const Home = () => {
 <h6 style={{ fontFamily: "'Lucida Console', Monaco, monospace", fontSize: "18px", margin: "10px 0" }}>Welcome to LeftBrain Path LLP</h6>
 <h6 style={{ fontFamily: "'Palatino Linotype', 'Book Antiqua', Palatino, serif", fontSize: "18px", margin: "10px 0" }}>Welcome to LeftBrain Path LLP</h6>
 
-    </div>
+    </div> */}
 
       <WelcomeSection>
         

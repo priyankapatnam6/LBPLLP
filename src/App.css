@@ -8,11 +8,13 @@ html, body, #root, .App {
   /* overflow: hidden; */
 }
 
-*{  font-family: 'Orbitron', sans-serif;
-  font-family: 'Bank Gothic, sans-serif';
-  font-family: 'Microgramma, sans-serif';
-  font-family:  'Eurostile, sans-serif';
+
+
+* {
+  font-family: 'Eurostile', 'Bank Gothic', 'Microgramma', sans-serif;
 }
+
+
 
  
 .App {
@@ -28,6 +30,8 @@ html, body, #root, .App {
    overflow: visible;
     padding: 0;
     box-sizing: border-box;}
+
+
     /* overflow-x: hidden;  */
     /* min-height: 100vh; */
   /* padding: 80px 0 80px;  */
@@ -80,6 +84,10 @@ html, body, #root, .App {
   to {
     transform: rotate(360deg);
   }
+}
+.scroll-wrapper {
+  overflow-y: auto;
+  max-height: 100%;
 }
 
 

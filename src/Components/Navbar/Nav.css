@@ -1,6 +1,5 @@
 .navbar {
   position: sticky;
-  /* position: fixed; */
   top: 0;
   width: 100%;
   z-index: 999;
@@ -10,9 +9,7 @@
   padding: 14px 40px;
   box-sizing: border-box;
   transition: background 0.4s ease, box-shadow 0.4s ease;
-  /* background: linear-gradient(to bottom, #C0C0C0, rgba(0,0,0,0)); */
- /* background: linear-gradient(to bottom, rgba(126, 195, 222, 0.55), rgba(0,0,0,0)); */
-  /* background: linear-gradient(to left, rgba(126, 195, 222, 0.55), rgba(0,0,0,0)); */
+
 }
 
 .navbar--hidden {
@@ -21,11 +18,9 @@
 
 .contact-page .navbar {
     background: linear-gradient(to bottom, rgb(136, 134, 134), rgba(0,0,0,0));
-  /* background: linear-gradient(to bottom, rgba(192, 192, 192, 1), rgba(0,0,0,0)); */
 }
 .navbar.scrolled {
   background: rgba(255, 255, 255, 0.97);
-  /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); */
   box-shadow: 0 2px 6px rgba(110, 169, 216, 0.1);
 }
 
@@ -58,7 +53,6 @@
 .navbar-right li a,
 .has-submenu > span {
   text-decoration: none;
-  /* color: black; */
   color: white;
   font-weight: 600;
   cursor: pointer;
@@ -222,22 +216,7 @@
   color:#A3210C !important;
   font-weight: 600;
 }
-/* Highlight the whole li when its link is active */
-/* .navbar-right li a.active {
-  color: #cc5c24 !important;   
-  font-weight: 700;
-  background: rgba(204, 92, 36, 0.15); 
-  border-radius: 6px;
-  padding: 8px 14px;
-} */
 
-/* 🔴 Highlight active menu item */
-/* .navbar-right li a.active {
-  color: #cc5c24 !important;  
-  font-weight: 700;             
-  border-bottom: 2px solid #cc5c24; 
-  padding-bottom: 4px;
-} */
 
 
 

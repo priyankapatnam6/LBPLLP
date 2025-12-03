@@ -13,7 +13,7 @@ const float = keyframes`
 const Section = styled.section`
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 250vh;
   overflow: hidden;
   font-family:'Bank Gothic, sans-serif' ;
   @media (max-width: 768px) {
@@ -44,29 +44,101 @@ const Particle = styled.div`
   }
 `;
 
+// const TextWrapper = styled.div`
+//   position: absolute;
+//   top: 50%; 
+//   left: 2%;
+//   transform: translateY(-50%);
+//   text-align: left;
+//   color: #fff;
+//   max-width: 690px;
+
+
+
+
+//    h2 {max-width:950px;
+//     font-size: 3rem;
+//     font-weight: 700;
+//     //  transform: skew(-8deg);
+//       // font-style: italic; 
+//         text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+//     display: flex; 
+//     flex-wrap: wrap;
+//     white-space: normal;
+   
+//   }
+
+//   p {
+//     font-size: 1.2rem;
+//     line-height: 1.6;
+//     margin-top: 20px;
+//     opacity: 0.9;
+//     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+//   }
+
+//   @media (max-width: 1024px) {
+//     left: 7%;
+//     max-width: 600px;
+
+//     h2 {
+//       font-size: 2.5rem;
+//       flex-wrap: wrap;     
+//       white-space: normal; 
+//     }
+
+//     p {
+//       font-size: 1.1rem;
+//     }
+//   }
+
+//   @media (max-width: 768px) {
+//     left: 5%;
+//     top: 40%;
+//     max-width: 90%;
+
+//     h2 {
+//       font-size: 2rem;
+//       line-height: 2.5rem;
+//     }
+
+//     p {
+//       font-size: 1rem;
+//       line-height: 1.5rem;
+//     }
+//   }
+
+//   @media (max-width: 480px) {
+//     top: 35%;
+
+//     h2 {
+//       font-size: 1.6rem;
+//       line-height: 2rem;
+//     }
+
+//     p {
+//       font-size: 0.9rem;
+//       line-height: 1.4rem;
+//     }
+//   }
+// `;
+
 const TextWrapper = styled.div`
   position: absolute;
   top: 50%; 
-   font-family: 'Bank Gothic', sans-serif;
   left: 2%;
   transform: translateY(-50%);
   text-align: left;
   color: #fff;
-  max-width: 690px;
+  max-width: 1500px;
 
-
-   h2 {
-    font-size: 4rem;
-    font-weight: 850;
-    letter-spacing: 1px;
-     transform: skew(-3deg);
-      font-style: italic; 
-    font-family: 'Bank Gothic', sans-serif;
+  h2 {
+    max-width: 1500px; 
+    font-size: 3rem;
+    font-weight: 700;
     text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
     display: flex; 
     flex-wrap: wrap;
     white-space: normal;
-   
   }
 
   p {
@@ -77,19 +149,20 @@ const TextWrapper = styled.div`
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
   }
 
-  @media (max-width: 1024px) {
-    left: 7%;
-    max-width: 600px;
+  @media (max-width: 1440px) {
+    max-width: 950px;
 
     h2 {
-      font-size: 2.5rem;
-      flex-wrap: wrap;     
-      white-space: normal; 
+      font-size: 2.8rem;
     }
+  }
 
-    p {
-      font-size: 1.1rem;
-    }
+  @media (max-width: 1024px) {
+    left: 5%;
+    max-width: 700px;
+
+    h2 { font-size: 2.5rem; }
+    p { font-size: 1.1rem; }
   }
 
   @media (max-width: 768px) {
@@ -97,31 +170,18 @@ const TextWrapper = styled.div`
     top: 40%;
     max-width: 90%;
 
-    h2 {
-      font-size: 2rem;
-      line-height: 2.5rem;
-    }
-
-    p {
-      font-size: 1rem;
-      line-height: 1.5rem;
-    }
+    h2 { font-size: 2rem; line-height: 2.5rem; }
+    p { font-size: 1rem; line-height: 1.5rem; }
   }
 
   @media (max-width: 480px) {
     top: 35%;
 
-    h2 {
-      font-size: 1.6rem;
-      line-height: 2rem;
-    }
-
-    p {
-      font-size: 0.9rem;
-      line-height: 1.4rem;
-    }
+    h2 { font-size: 1.6rem; line-height: 2rem; }
+    p { font-size: 0.9rem; line-height: 1.4rem; }
   }
 `;
+
 
 const containerVariants = {
   hidden: { opacity: 1 },
@@ -152,6 +212,7 @@ const AnimatedInfo = () => {
   return (
     <Section>
       <BackgroundImage src={image2} alt="Background" />
+      
 
       {particles.map((p, index) => (
         <Particle
@@ -165,21 +226,209 @@ const AnimatedInfo = () => {
       ))}
 
       <TextWrapper>
-        <motion.h2 variants={containerVariants}
-          initial="hidden"
-          animate="visible">
-          {title.split("").map((char, index) => (
-            <motion.span key={index} variants={letterVariants}>
-              {char === " " ? "\u00A0" : char}
-            </motion.span>
-          ))}
-        </motion.h2>
+      
+
+
+       
+
+        <motion.h2
+  variants={containerVariants}
+  initial="hidden"
+  animate="visible"
+  style={{ fontFamily: "'Oswald', sans-serif"}}
+>
+  {title.split("").map((char, index) => (
+    <motion.span
+      key={index}
+      variants={letterVariants}
+      style={{ fontFamily: "'Oswald', sans-serif" }} 
+    >
+      {char === " " ? "\u00A0" : char}
+    </motion.span>
+  ))}
+</motion.h2>
+
+
+  <motion.h2
+  variants={containerVariants}
+  initial="hidden"
+  animate="visible"
+  style={{ fontFamily: "'Pacifico', sans-serif" }}
+>
+  {title.split("").map((char, index) => (
+    <motion.span
+      key={index}
+      variants={letterVariants}
+      style={{ fontFamily: "'Pacifico', sans-serif" }} 
+    >
+      {char === " " ? "\u00A0" : char}
+    </motion.span>
+  ))}
+</motion.h2>
+
+
+  <motion.h2
+  variants={containerVariants}
+  initial="hidden"
+  animate="visible"
+  style={{ fontFamily: "'Alegreya Sans', sans-serif"}}
+>
+  {title.split("").map((char, index) => (
+    <motion.span
+      key={index}
+      variants={letterVariants}
+      style={{ fontFamily: "'Alegreya Sans', sans-serif" }} 
+    >
+      {char === " " ? "\u00A0" : char}
+    </motion.span>
+  ))}
+</motion.h2>
+
+
+  <motion.h2
+  variants={containerVariants}
+  initial="hidden"
+  animate="visible"
+  style={{ fontFamily: "'Oxanium', sans-serif", fontWeight: 700 }}
+>
+  {title.split("").map((char, index) => (
+    <motion.span
+      key={index}
+      variants={letterVariants}
+      style={{ fontFamily: "'Oxanium', sans-serif" }} 
+    >
+      {char === " " ? "\u00A0" : char}
+    </motion.span>
+  ))}
+</motion.h2>
+
+<motion.h2
+  variants={containerVariants}
+  initial="hidden"
+  animate="visible"
+  style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 600 }}
+>
+  {title.split("").map((char, index) => (
+    <motion.span key={index} variants={letterVariants}>
+      {char === " " ? "\u00A0" : char}
+    </motion.span>
+  ))}
+</motion.h2>
+
+
+
+  <motion.h2
+  variants={containerVariants}
+  initial="hidden"
+  animate="visible"
+  style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 700 }}
+>
+  {title.split("").map((char, index) => (
+    <motion.span
+      key={index}
+      variants={letterVariants}
+      style={{ fontFamily: "'Barlow Condensed', sans-serif" }} 
+    >
+      {char === " " ? "\u00A0" : char}
+    </motion.span>
+  ))}
+</motion.h2>
+<motion.h2
+  variants={containerVariants}
+  initial="hidden"
+  animate="visible"
+  style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 600 }}
+>
+  {title.split("").map((char, index) => (
+    <motion.span
+      key={index}
+      variants={letterVariants}
+      style={{ fontFamily: "'Cormorant Garamond', serif" }}
+    >
+      {char === " " ? "\u00A0" : char}
+    </motion.span>
+  ))}
+</motion.h2>
+
+
+<motion.h2
+  variants={containerVariants}
+  initial="hidden"
+  animate="visible"
+  style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600 }}
+>
+  {title.split("").map((char, index) => (
+    <motion.span
+      key={index}
+      variants={letterVariants}
+      style={{ fontFamily: "'Playfair Display', serif" }}
+    >
+      {char === " " ? "\u00A0" : char}
+    </motion.span>
+  ))}
+</motion.h2>
+
+
+<motion.h2
+  variants={containerVariants}
+  initial="hidden"
+  animate="visible"
+  style={{ fontFamily: "'Cinzel', serif", fontWeight: 600 }}
+>
+  {title.split("").map((char, index) => (
+    <motion.span
+      key={index}
+      variants={letterVariants}
+      style={{ fontFamily: "'Cinzel', serif" }}
+    >
+      {char === " " ? "\u00A0" : char}
+    </motion.span>
+  ))}
+</motion.h2>
+<motion.h2
+  variants={containerVariants}
+  initial="hidden"
+  animate="visible"
+  style={{ fontFamily: "'Inter', sans-serif" }}
+>
+  {title.split("").map((char, index) => (
+    <motion.span
+      key={index}
+      variants={letterVariants}
+      style={{ fontFamily: "'Inter', sans-serif" }}
+    >
+      {char === " " ? "\u00A0" : char}
+    </motion.span>
+  ))}
+</motion.h2>
+
+
+
+
+ <motion.h2
+  variants={containerVariants}
+  initial="hidden"
+  animate="visible"
+  style={{ fontFamily: "'Helvetica', sans-serif"}}
+>
+  {title.split("").map((char, index) => (
+    <motion.span
+      key={index}
+      variants={letterVariants}
+      style={{ fontFamily: "'Helvetica', sans-serif" }} 
+    >
+      {char === " " ? "\u00A0" : char}
+    </motion.span>
+  ))}
+</motion.h2>
+
+
+
+
+
 
         <motion.p variants={paragraphVariants} initial="hidden" animate="visible">
-        {/* We provide innovative software solutions designed to streamline operations, enhance reliability, and drive growth for your insurance business. */}
-          {/* Guidewire helps Property & Casualty(P&C) insurers innovate and deliver superior customer
-          experiences through scalable, cloud-based solutions. Our technology
-          transforms data into decisions — faster and smarter. */}
+    
 
         </motion.p>
       </TextWrapper>

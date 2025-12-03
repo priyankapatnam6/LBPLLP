@@ -1,0 +1,88 @@
+/* Reset and full screen */
+html, body, #root, .App {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;   /* no horizontal scroll */
+  overflow-y: hidden;   /* hide default window scroll */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Global font */
+* {
+  font-family:'Eurostile', 'Bank Gothic', 'Microgramma', sans-serif;
+}
+
+/* App wrapper */
+.App {
+  flex: 1;                  /* fill available height */
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* Scrollable container */
+.scroll-wrapper {
+  flex: 1;                  /* fill remaining height */
+  overflow-y: auto;         /* vertical scroll only inside */
+  -webkit-overflow-scrolling: touch; /* smooth scroll on mobile */
+}
+
+/* Main content - unchanged */
+.main-content {
+  flex: 1; 
+  height: calc(100vh - 60px);
+  overflow-y: auto; 
+  overflow: visible;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Mobile padding adjustments */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 70px 1rem 70px;
+  }
+}
+
+/* Leaflet map */
+@import url('https://unpkg.com/leaflet@1.9.4/dist/leaflet.css');
+
+.leaflet-container {
+  width: 100%;
+  height: 250px; 
+  border-radius: 8px;
+}
+
+/* Other optional classes you had */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

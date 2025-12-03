@@ -115,53 +115,13 @@ const UpButton = styled.button`
 const Footer = () => {
   const [mapVisible, setMapVisible] = useState(false);
 
-//  const scrollToTop = () => {
-//   const container = document.querySelector(".main-content");
-//   if (container) {
-//     container.scrollTo({ top: 0, behavior: "smooth" });
-//   } else {
-//     window.scrollTo({ top: 0, behavior: "smooth" });
-//   }
-// };
 
-// const scrollToTop = () => {
-//   const root = document.documentElement || document.body;
-//   root.scrollTo({ top: 0, behavior: "smooth" });
-// };
 
-// const scrollToTop = () => {console.log(document.querySelector(".main-content").scrollTop);
-// document.querySelector(".main-content").scrollTop;
-//   // document.documentElement.scrollTo({ top: 0, behavior: "smooth" });
-// };
-// const scrollToTop = () => {
-//   const container = document.querySelector(".main-content");
-
-//   if (container) {
-//     console.log("Current scrollTop:", container.scrollTop); // just for debugging
-//     container.scrollTo({ top: 0, behavior: "smooth" }); // ✅ scrolls to top smoothly
-//   } else {
-//     window.scrollTo({ top: 0, behavior: "smooth" }); // fallback
-//   }
-// };
 
 const scrollToTop = () => {
-  const container = document.querySelector(".main-content");
-  if (container && container.scrollHeight > container.clientHeight) {
-    container.scrollTo({ top: 0, behavior: "smooth" });
-  } else {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }
+const container = document.querySelector(".scroll-wrapper");
+container.scrollTo({ top: 0, behavior: "smooth" });
 };
-
-// const scrollToTop = () => {
-//   const root = document.documentElement;
-//   const body = document.body;
-
-//   (root.scrollTo || body.scrollTo).call(root, { top: 0, behavior: "smooth" });
-// };
-
-
-
 
   const toggleMap = () => {
     setMapVisible((prev) => !prev);

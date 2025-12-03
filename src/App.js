@@ -62,7 +62,9 @@
 
 
 
-import './App.css';
+
+
+import './Appp.css';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import Navbar from './Components/Navbar/Navbar';
@@ -98,8 +100,10 @@ function AppContent() {
     }
   }, [location]);
 
-  return (
+  return (        <div className="scroll-wrapper">
+
     <div className="main-content">
+
       <Navbar />
       <TitleManager />
       <Routes>
@@ -121,7 +125,7 @@ function AppContent() {
         <Route path='/contactUs' element={<ContactUs />} />
       </Routes>
       <Footer />
-    </div>
+    </div></div>
   );
 }
 

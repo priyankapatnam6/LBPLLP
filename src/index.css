@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 
-  'Eurostile Extended Oblique', 
+  'Eurostile ', 
   'Bank Gothic', 
   'Microgramma Extended Oblique', 
   'Orbitron',
@@ -23,6 +23,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
