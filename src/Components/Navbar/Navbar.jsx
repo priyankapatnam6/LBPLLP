@@ -162,13 +162,13 @@ const Navbar = () => {
               <ul> <li><NavLink to="/guidewireservices&solutions"  onClick={handleLinkClick} >  Core P&C Solutions </NavLink>
                   <p className="menu-description">  Seamless, optimized Guidewire implementation services. </p>  </li>
  <li><NavLink to="/quality-assurance" onClick={handleLinkClick} >  Quality Assurance </NavLink>
-   <p className="menu-description"> Intelligent testing for reliable Guidewire delivery.  </p> </li>
+   <p className="menu-description">Smart testing processes that ensure high-quality, reliable delivery.  </p> </li>
                 <li> <NavLink  to="/bereauIntegration" onClick={handleLinkClick} > Bureau & Proprietary Services</NavLink>
                   <p className="menu-description"> Efficient compliance and rate management solutions. </p> </li>
                 <li><NavLink to="/ccmwithsmartcomm" onClick={handleLinkClick} >Customer Communication Management</NavLink>
                   <p className="menu-description"> Automated, personalized communication. </p> </li>
                 <li> <NavLink to="/mulesoftintegration" onClick={handleLinkClick}> Integration & API Services</NavLink>
-             <p className="menu-description">Secure and scalable Guidewire connectivity.</p></li> </ul> </div>)}</li>
+             <p className="menu-description">Reliable, high-performance integration supported by secure API frameworks.</p></li> </ul> </div>)}</li>
 
 
      <li className="has-submenu" onMouseEnter={() => !isOpen && setActiveMenu("sectors")}
@@ -189,13 +189,13 @@ const Navbar = () => {
                   <NavLink to="/personal-lines" onClick={handleLinkClick}> <FaCar className="menu-icon" /> Personal Lines </NavLink> <p className="menu-description">Insurance for individuals.</p> </li>
                 <li> <NavLink to="/commercial-lines" onClick={handleLinkClick}> <FaBuilding className="menu-icon" /> Commercial Lines </NavLink>
                   <p className="menu-description">Coverage for businesses.</p></li>
+                   <li><NavLink to="/workers-compensation" onClick={handleLinkClick}><FaHardHat className="menu-icon" /> Workers Compensation </NavLink>
+                  <p className="menu-description"> Protection for workplace injuries.</p></li>
                 <li><NavLink to="/specialty-lines" onClick={handleLinkClick}><FaStar className="menu-icon" /> Specialty Lines </NavLink>
                   <p className="menu-description">Protection for complex risks.</p></li>
                 <li><NavLink to="/reinsurers" onClick={handleLinkClick}><FaHandshake className="menu-icon" /> Reinsurers </NavLink>
                   <p className="menu-description">Insurance for insurance companies. </p></li>
-                <li><NavLink to="/workers-compensation" onClick={handleLinkClick}><FaHardHat className="menu-icon" /> Workers Compensation </NavLink>
-                  <p className="menu-description"> Protection for workplace injuries.</p>
-                </li></ul></div>)}</li>
+                </ul></div>)}</li>
 
         <li><NavLink to="/career" onClick={handleLinkClick} style={({ isActive }) => getLinkStyle(isActive)}> Careers</NavLink></li>
         <li> <NavLink to="/contactUs" onClick={handleLinkClick} style={({ isActive }) => getLinkStyle(isActive)}> Contact Us </NavLink> </li>

@@ -95,7 +95,8 @@ const BenefitsSection = () => {
   const benefits = [
     {
       title: "P&C Domain Expertise",
-      desc: "Deep experience in Property & Casualty insurance for US and Europe markets, delivering reliable solutions.",
+      desc:"Deep expertise in Property & Casualty insurance across U.S. and European markets, delivering dependable, high-quality solutions.",
+      //  "Deep experience in Property & Casualty insurance for US and Europe markets, delivering reliable solutions.",
       icon: <FaShieldAlt />,
     },
     // {

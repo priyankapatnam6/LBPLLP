@@ -132,8 +132,8 @@ container.scrollTo({ top: 0, behavior: "smooth" });
       <Content>
         <Section> <Title>LeftBrain Path LLP – Development Center</Title>
           <Address>
-            <p>3rd & 4th Floor, Plot #13, Shilpi Layout,<br/> Vittal Rao Nagar,<br />
-              Image Hospital Rd, Madhapur, Gafoornagar,<br />
+            <p>3rd & 4th Floors, Plot #13, Shilpi Layout,<br/> Vittal Rao Nagar,<br />
+              Image Hospital Road, Madhapur, Gafoornagar,<br />
               Hyderabad, Telangana 500081 </p><p>Telangana, India</p>
             <ToggleMapButton onClick={toggleMap} title="Toggle Map" aria-expanded={mapVisible}>
               <FaMapMarkerAlt /> {mapVisible ? "Hide Map" : "Show Map"}
@@ -160,7 +160,7 @@ container.scrollTo({ top: 0, behavior: "smooth" });
           <ContactItem><FaEnvelope /> <a href="mailto:solutions@leftbrainpath.com">solutions@leftbrainpath.com</a></ContactItem>
           <ContactItem><FaClock /> Mon – Fri </ContactItem>
           <ContactItem><FaPhone /> <a href="tel:+914045130116">040 – 45130116</a></ContactItem>
-          <ContactItem><FaMapMarkerAlt /> Hyderabad,Telangana</ContactItem> </Section></Content>
+          <ContactItem><FaMapMarkerAlt /> Hyderabad, Telangana</ContactItem> </Section></Content>
 
       <p style={{textAlign: "center",marginTop: "25px",fontWeight:"bold",fontSize: "16px",color: "#555",}}>
         &copy; LeftBrain Path LLP – Catalyst for Success – 2025. All Rights Reserved.</p>

@@ -6,7 +6,7 @@ const Services = () => {
   const navigate = useNavigate();
   const services = [
     { title: "Core P&C Solutions",
-      description:"Optimize workflows, system integrations, and cloud coding standards.",icon: <FaCogs />,path:"/guidewireservices&solutions"},
+      description:"Optimize workflows,system integrations, and Cloud coding standards.",      icon: <FaCogs />,path:"/guidewireservices&solutions"},
     {title: "Quality Assurance",
       description:
         "Comprehensive testing services, including automation and performance testing.",
@@ -56,7 +56,7 @@ const Services = () => {
       color: "#444",
       fontSize: "1.3rem",
       marginTop:"-1px",
-      marginBottom: "40px",
+      marginBottom: "20px",
       maxWidth: "1000px",
       marginInline: "auto",
       lineHeight: "1.6",
@@ -76,7 +76,8 @@ const Services = () => {
       padding: "20px 15px",
       flex: "1", 
       minWidth: "0", 
-      textAlign: "center",
+      textAlign: "center",  display: "flex",
+  flexDirection: "column",
       transition: "transform 0.25s ease, box-shadow 0.25s ease",
     },
     icon: {
@@ -98,7 +99,8 @@ const Services = () => {
     },
     button: {
       backgroundColor: "#1d3557",
-      color: "#fff",
+      color: "#fff",  marginTop: "auto", width: "100px",       
+  alignSelf: "center", 
       border: "none",
       padding: "6px 12px",
       borderRadius: "5px",
@@ -116,9 +118,8 @@ const Services = () => {
       </div>
 
       <h3 style={styles.subtitle}>
-        We specialize in end-to-end Guidewire® solutions, QA testing, and
-        seamless MuleSoft integrations for faster, reliable, and scalable
-        digital transformation.</h3>
+       
+       We specialize in end-to-end solution delivery, comprehensive QA testing, and seamless system integrations to enable faster, more reliable, and scalable digital transformation.</h3>
 
       <div style={styles.row}>
         {services.map((service, index) => (

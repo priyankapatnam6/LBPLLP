@@ -33,7 +33,7 @@ const CertWrapper = styled.section`
   }
     h3 {
       font-size: 1.3rem;
-      margin-bottom: 12px;
+      margin-bottom: 25px;
       color: #444;
     }
 
